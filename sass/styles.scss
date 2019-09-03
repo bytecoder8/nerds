@@ -1,0 +1,17 @@
+@import 'normalize.scss';
+
+@mixin font-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+
+$color-white: #fff;
+
+// Common
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include font-lato;
+}
