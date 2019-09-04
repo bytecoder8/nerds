@@ -341,22 +341,22 @@ body {
   display: flex;
   margin: 0;
   padding: 0; }
-  .menu-list .menu-element:not(:first-child) {
+  .menu-list .menu-list__element:not(:first-child) {
     margin-left: 45px; }
 
-.menu-element {
+.menu-list__element {
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase; }
-  .menu-element a {
+  .menu-list__element a {
     color: #000;
     text-decoration: none;
     position: relative; }
-    .menu-element a:hover {
+    .menu-list__element a:hover {
       color: #f7898b; }
-    .menu-element a:active {
+    .menu-list__element a:active {
       color: #b2b2b2; }
-  .menu-element_active a::after {
+  .menu-list__element_active a::after {
     content: '';
     background-color: #fc555c;
     position: absolute;
@@ -507,22 +507,22 @@ body {
 
 .facts {
   width: 360px; }
-  .facts_list {
+  .facts__list {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0; }
-    .facts_list li {
+    .facts__list li {
       width: 33%; }
-  .facts_header {
+  .facts__header {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
     margin: 40px 0 40px; }
-  .facts_title {
+  .facts__title {
     font-size: 45px;
     font-weight: bold; }
-  .facts_title-percent {
+  .facts__title-percent {
     font-size: 25px; }
 
 .clients {
@@ -593,13 +593,13 @@ body {
 
 .social-invite {
   text-align: left; }
-  .social-invite_title {
+  .social-invite__title {
     margin: 0;
     padding-top: 10px;
     font-size: 36px;
     font-weight: 700;
     line-height: 36px; }
-  .social-invite_text {
+  .social-invite__text {
     font-size: 16px;
     line-height: 24px;
     margin-top: 5px; }
