@@ -356,7 +356,7 @@ body {
       color: #f7898b; }
     .menu-list__element a:active {
       color: #b2b2b2; }
-  .menu-list__element_active a::after {
+  .menu-list__element--active a::after {
     content: '';
     background-color: #fc555c;
     position: absolute;
@@ -385,7 +385,7 @@ body {
       height: 15px;
       position: absolute;
       left: -40px; }
-  .cart_active a {
+  .cart--active a {
     text-decoration: underline;
     color: #f7898b; }
 
@@ -463,11 +463,11 @@ body {
     border-radius: 3px;
     text-decoration: none;
     color: #fff; }
-    .service__button_type_site {
+    .service__button--type--site {
       background-color: #fb565a; }
-    .service__button_type_site {
+    .service__button--type--app {
       background-color: #00ca74; }
-    .service__button_type_site {
+    .service__button--type--pr {
       background-color: #efc84a; }
 
 .description-block {

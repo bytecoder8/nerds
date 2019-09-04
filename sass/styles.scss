@@ -90,7 +90,7 @@ body {
         }
     }
 
-    &_active a::after {
+    &--active a::after {
         content: '';
         background-color: $color-link-current;
         position: absolute;
@@ -129,7 +129,7 @@ body {
         }
     }
 
-    &_active a {
+    &--active a {
         text-decoration: underline;
         color: #f7898b;
     }
@@ -233,13 +233,13 @@ body {
         text-decoration: none;
         color: $color-white;
 
-        &_type_site {
+        &--type--site {
             background-color: #fb565a;
         }
-        &_type_site {
+        &--type--app {
             background-color: #00ca74;
         }
-        &_type_site {
+        &--type--pr {
             background-color: #efc84a;
         }
     }
@@ -263,7 +263,7 @@ body {
     }
 
     &__content {
-        
+
     }
 }
 
