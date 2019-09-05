@@ -1,0 +1,158 @@
+/* catalog-page */
+@mixin catalog-button {
+  color: $color-black;
+  background-color: #eeeeee;
+
+  &:hover {
+    background-color: #dfdfdf;
+  }
+  &:active {
+    background-color: #d5d5d5;
+    color: rgba($color-black, 0.4);
+  }
+}
+
+
+.catalog-header {
+  width: $site-width;
+  height: 238px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-page {
+  display: flex;
+  padding: 62px 20px 60px;
+
+  &__filters {
+    width: 260px;
+    margin-right: 140px;
+  }
+}
+
+.catalog-filters {
+  &__button {
+    @include catalog-button;
+    width: 100%;
+  }
+}
+
+.catalog-content {
+
+  &__sort {
+    display: flex;
+  }
+  &__header {
+    width: 160px;
+    margin-right: 240px;
+  }
+  &__sorters {
+    width: 280px;
+    margin-right: 48px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__directions {
+    width: 40px;
+  }
+
+  &__pages {
+    margin-top: 60px;
+    display: flex;
+  }
+
+  &__page {
+    @include catalog-button;
+    width: 50px;
+    margin-right: 11px;
+  }
+  &__active-page {
+    width: 50px;
+    height: 50px;
+    margin-right: 11px;
+
+    text-align: center;
+    border-radius: 3px;
+    background-color: white;
+    border: 3px solid #e7e7e7;
+    line-height: 50px - 6px;
+  }
+
+  &__page-next {
+    @include catalog-button;
+    width: 260px;
+  }
+}
+
+.catalog-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+  padding-top: 55px - 33;
+
+  &__item {
+    width: 360px;
+    height: 616px;
+    margin-top: 33px;
+    position: relative;
+    &:nth-child(even) {
+      margin-left: 40px;
+    }
+    &:hover {
+      box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25); 
+      //text-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25); 
+    }
+    transition: 0.2s;
+  }
+  &__image {
+    border: 1px solid #f1f1f1;
+    width: 100%;
+  }
+  &__browser {
+    height: 40px;
+    opacity: 0.12;
+    background: url('/images/browser.png') no-repeat left top;
+  }
+  &__item:hover &__browser {
+    opacity: 1;
+  }
+
+  &__hover {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  &__item:hover &__hover {
+    display: block;
+  }
+}
+
+
+.card-hover {
+  width: 360px;
+  height: 230px;
+  background-color: #eeeeee;
+  padding: 35px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+    margin-top: 28px;
+  }
+  &__button {
+    margin: 30px auto 0;
+  }
+}
+/* end catalog-page */

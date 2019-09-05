@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Нёрдс - Каталог</title>
+
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="logo">
+                <a href="/"><img src="images/logo.png" class="logo-image" alt="лого"></a>
+            </div>
+            <nav class="header__menu">
+                <ul class="menu-list">
+                    <li class="menu-list__element"><a href="/index.html">Студия</a></li>
+                    <li class="menu-list__element"><a href="#">Клиенты</a></li>
+                    <li class="menu-list__element menu-list__element--active"><a href="/catalog.html">Магазин</a></li>
+                    <li class="menu-list__element"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="cart header__cart">
+                <a href="#">Корзина</a>
+            </div>
+        </div>
+        <section class="catalog-header">
+          <h1 class="header__page-title">
+            Магазин готовых шаблонов
+          </h1>
+        </section>
+    </header>
+
+    <div class="container">
+        <main class="catalog-page">
+          <aside class="catalog-filters catalog-page__filters">
+            filters
+            <button class="button catalog-filters__button">показать</button>
+          </aside><!-- /.catalog-filters -->
+          <section class="catalog-content">
+            <div class="catalog-content__sort">
+              <div class="catalog-content__header">сортировать:</div>
+              <div class="catalog-content__sorters">
+                <div class="catalog-content__sorter">по цене</div>
+                <div class="catalog-content__sorter">по типу</div>
+                <div class="catalog-content__sorter">по названию</div>
+              </div>
+              <div class="catalog-content__directions">
+                <span class="catalog-content__direction catalog-content__direction--desc">
+                  V
+                </span>
+                <span class="catalog-content__direction catalog-content__direction--asc">
+                  A
+                </span>
+              </div>
+            </div><!-- /.catalog-content__sort -->
+            <div class="catalog-items catalog-content__items">
+              <div class="catalog-items__item">
+                <div class="catalog-items__browser"></div>
+                <img src="/images/template1.jpg" class="catalog-items__image" alt="шаблон 1">
+                <div class="card-hover catalog-items__hover">
+                  <div class="card-hover__title">SEDONA</div>
+                  <p class="card-hover__text">Информационный сайт<br>
+                  для туристов</p>
+                  <a href="#" class="button card-hover__button">9 990 руб.</a>
+                </div>
+              </div>
+              <div class="catalog-items__item">
+                <div class="catalog-items__browser"></div>
+                <img src="/images/template2.jpg" alt="шаблон 2">
+                <div class="card-hover catalog-items__hover">
+                  <div class="card-hover__title">pink</div>
+                  <p class="card-hover__text">Информационный сайт<br>
+                  для туристов</p>
+                  <a href="#" class="button card-hover__button">9 990 руб.</a>
+                </div>
+              </div>
+              <div class="catalog-items__item">
+                <div class="catalog-items__browser"></div>
+                <img src="/images/template3.jpg" alt="шаблон 3">
+                <div class="card-hover catalog-items__hover">
+                  <div class="card-hover__title">borodinski</div>
+                  <p class="card-hover__text">Информационный сайт<br>
+                  для туристов</p>
+                  <a href="#" class="button card-hover__button">9 990 руб.</a>
+                </div>
+              </div>
+              <div class="catalog-items__item">
+                <div class="catalog-items__browser"></div>
+                <img src="/images/template4.jpg" alt="шаблон 4">
+                <div class="card-hover catalog-items__hover">
+                  <div class="card-hover__title">mishka</div>
+                  <p class="card-hover__text">Информационный сайт<br>
+                  для туристов</p>
+                  <a href="#" class="button card-hover__button">9 990 руб.</a>
+                </div>
+              </div>
+              <div class="catalog-items__item">
+                <div class="catalog-items__browser"></div>
+                <img src="/images/template5.jpg" alt="шаблон 5">
+                <div class="card-hover catalog-items__hover">
+                  <div class="card-hover__title">учеба</div>
+                  <p class="card-hover__text">Информационный сайт<br>
+                  для туристов</p>
+                  <a href="#" class="button card-hover__button">9 990 руб.</a>
+                </div>
+              </div>
+              <div class="catalog-items__item">
+                <div class="catalog-items__browser"></div>
+                <img src="/images/template6.jpg" alt="шаблон 6">
+                <div class="card-hover catalog-items__hover">
+                  <div class="card-hover__title">Кваст</div>
+                  <p class="card-hover__text">Информационный сайт<br>
+                  для туристов</p>
+                  <a href="#" class="button card-hover__button">9 990 руб.</a>
+                </div>
+              </div>
+            </div><!-- /.catalog-content__items -->
+            <nav class="catalog-content__pages">
+              <div href="#" class="catalog-content__active-page">1</div>
+              <a href="#" class="button catalog-content__page">2</a>
+              <a href="#" class="button catalog-content__page">3</a>
+              <a href="#" class="button catalog-content__page">3</a>
+              <a href="#" class="button catalog-content__page-next">следующая</a>
+            </nav>
+          </section><!-- /.catalog-content -->
+        </main>
+        <footer class="footer">
+            <section class="map-container">
+                <div class="map">
+                    КАРТА
+                </div>
+                <div class="contacts-card map-container__contacts">
+                    <div class="contacts-card__title">nёrds design studio</div>
+                    <address class="contacts-card__address">
+                        191186, Санкт-Петербург, <br>
+                        ул. Б. Конюшенная, д. 19/8
+                    </address>
+                    <a href="tel:78122757575" class="contacts-card__phone">тел. +7 (812) 275-75-75</a>
+                    <a href="#" class="button contacts-card__button">
+                        Напишите нам
+                    </a>
+                </div><!-- /.contacts-card -->
+            </section><!-- /.map-container -->
+            <section class="footer__socials">
+                <ul class="socials">
+                        <li><a href="http://vk.com" target="_blank" class="socials__button socials__button--vk" alt="vk"></a></li>
+                        <li><a href="http://facebook.com" target="_blank" class="socials__button socials__button--fb" alt="fb"></a></li>
+                        <li><a href="http://instagram.com" target="_blank" class="socials__button socials__button--insta" alt="insta"></a></li>
+                </ul>
+                <div class="social-invite footer__social-invite">
+                    <h4 class="social-invite__title">Давайте дружить, это выгодно!</h4>
+                    <span class="social-invite__text">Скидка 10% для друзей из социальных сетей.</span>
+                </div>
+            </section><!-- /.footer__socials -->
+        </footer>      
+    </div>
+</body>
+</html>
