@@ -32,6 +32,32 @@ body {
     margin: 0 auto;
 }
 
+.button {
+    display: block;
+    width: 160px;
+    height: 50px;
+    
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 50px;
+    background-color: #fb565a;
+    border-radius: 3px;
+    transition: 0.2s;
+
+    text-decoration: none;
+    color: $color-white;
+
+    &:active {
+        box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
+        text-shadow: 0px 3px 0px rgba(0, 1, 1, 0.1) inset;
+
+        background-color: #d7373b;
+        color: rgba(#fff, 0.4);
+    }
+}
+
 
 /* header */ 
 .header {
@@ -73,6 +99,7 @@ body {
 
 .logo {
     text-decoration: none;
+    transition: .25s;
     &:hover {
         opacity: 0.8;
     }
@@ -130,6 +157,7 @@ body {
     a {
         color: $color-black;
         text-decoration: none;
+        transition: 0.2s;
 
         &:hover {
             color: $color-link-hover;
@@ -173,33 +201,9 @@ body {
         line-height: 24px;
     }
     &__button {
-        display: block;
         width: 240px;
         height: 50px;
-        
-        text-transform: uppercase;
-        font-size: 16px;
         font-weight: 500;
-        text-align: center;
-        line-height: 50px;
-        background-color: #fb565a;
-        border-radius: 3px;
-        transition: 0.2s;
-
-        text-decoration: none;
-        color: $color-white;
-
-        &:hover {
-            background-color: #e74246;
-        }
-
-        &:active {
-            background-color: #d7373b;
-            color: rgba(#fff, 0.4);
-
-            box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
-            text-shadow: 0px 3px 0px rgba(0, 1, 1, 0.1) inset;
-        }
     }
 }
 
@@ -301,26 +305,9 @@ body {
     }
 
     &__button {
-        display: block;
         width: 160px;
         height: 50px;
-        
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 400;
-        text-align: center;
-        line-height: 50px;
-        background-color: #fb565a;
-        border-radius: 3px;
-        transition: 0.2s;
-
-        text-decoration: none;
-        color: $color-white;
-
-        &:active {
-            box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
-            text-shadow: 0px 3px 0px rgba(0, 1, 1, 0.1) inset;
-        }
+        margin-top: 36px;
 
         &--type--site {
             background-color: #fb565a;
@@ -493,13 +480,55 @@ body {
 
 .map-container {
     height: 416px;
+
+    &__contacts {
+        position: absolute;
+        margin-top: 55px;
+        z-index: 1;
+    }
 }
+
+.contacts-card {
+    width: 320px;
+    height: 308px;
+
+    padding-top: 54px;
+    padding-left: 50px;
+    background-color: $color-white;
+
+    &__title {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    &__address {
+        margin-top: 30px;
+        font-style: normal;
+    }
+    &__phone {
+        display: block;
+        margin-top: 24px;
+        text-decoration: none;
+        color: $color-black;
+    }
+    &__button {
+        margin-top: 34px;
+        width: 219px;
+        height: 50px;
+    }
+}
+
 .map {
     left: 0;
     position: absolute;
     width: 100%;
     height: 416px;
     background-color: #ccc;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 416px;
 }
 
 .socials {
@@ -572,9 +601,10 @@ body {
     }
 
     &__text {
+        display: block;
         font-size: 16px;
         line-height: 1.5*16px;
-        margin-top: 5px;
+        margin-top: 10px;
     }
 }
 /* end footer */
