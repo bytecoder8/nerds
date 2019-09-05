@@ -13,7 +13,8 @@ $color-link-hover: #f7898b;
 $color-link-active: rgb(178, 178, 178);
 $color-link-current: #fc555c;
 
-// Common
+
+/* Common */
 * {
     box-sizing: border-box;
 }
@@ -23,6 +24,7 @@ body {
     font-size: 16px;
     background-color: $color-white;
 }
+/* end common */
 
 
 .container {
@@ -30,7 +32,8 @@ body {
     margin: 0 auto;
 }
 
-// header 
+
+/* header */ 
 .header {
     background-color: $color-gray;
     padding: 48px 0 0;
@@ -39,7 +42,6 @@ body {
         width: $site-width;
         margin: 0 auto;
         display: flex;
-        //justify-content: space-between;
         align-items: center;
 
         padding: 0 20px;
@@ -59,6 +61,12 @@ body {
         min-height: 413px;
         padding: 0 20px;
         margin: 0 auto;
+
+        padding-top: 80px;
+    }
+
+    &__slider {
+        margin-left: 50px;
     }
 }
 
@@ -92,6 +100,7 @@ body {
             color: $color-black;
             text-decoration: none;
             position: relative;
+            transition: 0.2s;
 
             &:hover {
                 color: $color-link-hover;
@@ -149,7 +158,6 @@ body {
 .jumbotron {
     width: 380px;
     height: 265px;
-    margin-top: 80px;
 
     &__title {
         margin: 0;
@@ -176,6 +184,7 @@ body {
         line-height: 50px;
         background-color: #fb565a;
         border-radius: 3px;
+        transition: 0.2s;
 
         text-decoration: none;
         color: $color-white;
@@ -195,7 +204,6 @@ body {
 }
 
 .slider {
-    margin-left: 50px;
     position: relative;
 
     &__element {
@@ -215,7 +223,6 @@ body {
         justify-content: space-between;
         width: 18px * 5;
     }
-
     &__button {
         position: relative;
         cursor: pointer;
@@ -247,25 +254,38 @@ body {
     &__radio {
         display: none;
     }
-    
+
     &__radio:checked + &__button-text::after {
         opacity: 1;
     }
     
 }
+/* end header */
 
-// /header
 
+/* main */
 .main {
     padding: 0 20px;
+
+    &__services {
+        margin-top: 80px;
+        padding-bottom: 80px;
+        border-bottom: 2px solid #f4f4f4;
+    }
+
+    &__description {
+        margin-top: 40px;
+    }
+
+    &__clients {
+        margin: 80px 0 80px;
+        border-top: 2px solid #f4f4f4;
+        border-bottom: 2px solid #f4f4f4;
+    }
 }
 
 .services {
-    margin-top: 80px;
     display: flex;
-    padding-bottom: 80px;
-    border-bottom: 2px solid #f4f4f4;
-
     >:not(:first-child) {
         margin-left: 100px;
     }
@@ -292,6 +312,7 @@ body {
         line-height: 50px;
         background-color: #fb565a;
         border-radius: 3px;
+        transition: 0.2s;
 
         text-decoration: none;
         color: $color-white;
@@ -338,7 +359,10 @@ body {
 .description-block {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+
+    &__named-list {
+        margin-top: 50px;
+    }
 }
 
 .text-card {
@@ -357,7 +381,6 @@ body {
 }
 
 .named-list {
-    margin-top: 50px;
     &__title {
         font-weight: bold;
         text-transform: uppercase;
@@ -423,10 +446,6 @@ body {
 
 
 .clients {
-    margin: 80px 0 80px;
-    border-top: 2px solid #f4f4f4;
-    border-bottom: 2px solid #f4f4f4;
-
     &__list {
         margin: 0;
         padding: 46px 0;
@@ -438,6 +457,7 @@ body {
         & li {
             opacity: 0.2;
             width: 260px;
+            transition: 0.2s;
 
             & a {
                 display: block;
@@ -456,11 +476,19 @@ body {
         }
     }
 }
+/* end main */
 
-// footer
 
+/* footer */
 .footer {
-    
+    &__socials {
+        margin: 70px 0 70px;
+        padding: 0 20px;
+        display: flex;
+    }
+    &__social-invite {
+        margin-left: 140px;
+    }
 }
 
 .map-container {
@@ -474,61 +502,61 @@ body {
     background-color: #ccc;
 }
 
-.social {
-    margin: 70px 0 70px;
-    padding: 0 20px;
-    display: flex; 
-}
-
-// Buttons
-.social-buttons {
+.socials {
     list-style: none;
     margin: 0;
     padding: 0;
 
     display: flex;
-    flex-basis: 30%;
+    flex-basis: 260px;
+    width: 260px;
 
     & :not(:first-child) {
         margin-left: 10px;
     }
-}
-.social-button {
-    display: block;
-    width: 78px;
-    height: 78px;
 
-    border-radius: 50%;
-    background-color: #e1e1e1;
+    &__button {
+        display: block;
+        width: 78px;
+        height: 78px;
 
-    &:hover {
-        background-color: #e74246;
-    }
-    &:active {
-        background-color: #d7373b;
-        box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
-        text-shadow: 0px 3px 0px rgba(0, 1, 1, 0.1) inset;
-        position: relative;
+        border-radius: 50%;
+        background-color: #e1e1e1;
+        transition: 0.2s;
 
-        &::after {
-            content: '';
-            position: absolute;
-            top: 19px;
-            left: 19px;
-            width: 40px;
-            height: 40px;
-            background: rgba(#d7373b, 0.7);
+        &:hover {
+            background-color: #e74246;
         }
-    }
+        &:active {
+            background-color: #d7373b;
+            position: relative;
 
-    &__vk {
-        background: #e1e1e1 url('/images/icon_vk.png') no-repeat center center;
-    }
-    &__fb {
-        background: #e1e1e1 url('/images/icon_fb.png') no-repeat center center;
-    }
-    &__insta {
-        background: #e1e1e1 url('/images/icon_insta.png') no-repeat center center;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                //width: 40px;
+                //height: 40px;
+                border-radius: 50%;
+                background: rgba(#d7373b, 0.7);
+
+                box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
+                text-shadow: 0px 3px 0px rgba(0, 1, 1, 0.1) inset;
+            }
+        }
+
+        &--vk {
+            background: #e1e1e1 url('/images/icon_vk.png') no-repeat center center;
+        }
+        &--fb {
+            background: #e1e1e1 url('/images/icon_fb.png') no-repeat center center;
+        }
+        &--insta {
+            background: #e1e1e1 url('/images/icon_insta.png') no-repeat center center;
+        }
     }
 }
 
@@ -549,5 +577,4 @@ body {
         margin-top: 5px;
     }
 }
-
-// /footer
+/* end footer */
