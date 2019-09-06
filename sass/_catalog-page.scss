@@ -35,6 +35,69 @@
 }
 
 .catalog-filters {
+  
+  &__header {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+  &__header--first {
+    margin-bottom: 58px;
+  }
+
+  &__prices {
+    margin-bottom: 62px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__price-range {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 14px;
+    background-color: #eeeeee;
+    border-radius: 3px;
+    height: 80px;
+
+    [type=range] {
+      display: block;
+      width: 220px;
+      height: 24px;
+      margin: 0 auto;
+    }
+  }
+  &__price-start, &__price-end {
+    display: block;
+    background-color: #eeeeee;
+    width: 80px;
+    height: 38px;
+    border: none;
+    border-radius: 3px;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &__grid-types {
+    margin-bottom: 50px;
+  }
+  &__grid-type {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &__features {
+    margin-bottom: 50px;
+  }
+  &__feature {
+    display: block;
+    margin-bottom: 15px;
+  }
+
   &__button {
     @include catalog-button;
     width: 100%;
@@ -42,26 +105,62 @@
 }
 
 .catalog-content {
+  width: 760px;
 
   &__sort {
     display: flex;
+    margin-bottom: 58px;
   }
   &__header {
     width: 160px;
     margin-right: 240px;
+
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
   &__sorters {
     width: 280px;
-    margin-right: 48px;
+    margin-right: 40px;
     display: flex;
     justify-content: space-between;
+    user-select: none;
   }
+  &__sorter {
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: 0.3;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active, &--active {
+      opacity: 1;
+    }
+  }
+
   &__directions {
     width: 40px;
+    user-select: none;
+  }
+  &__direction {
+    display: inline-block;
+    opacity: 0.3;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active, &--active {
+      opacity: 1;
+    }
+
+    &--desc {
+      margin-right: 10px; 
+    }
   }
 
   &__pages {
-    margin-top: 60px;
+    margin-top: 60px - 33;
     display: flex;
   }
 
@@ -92,12 +191,11 @@
   display: flex;
   flex-wrap: wrap;
   width: 760px;
-  padding-top: 55px - 33;
 
   &__item {
     width: 360px;
     height: 616px;
-    margin-top: 33px;
+    margin-bottom: 33px;
     position: relative;
     &:nth-child(even) {
       margin-left: 40px;

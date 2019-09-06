@@ -36,23 +36,83 @@
     <div class="container">
         <main class="catalog-page">
           <aside class="catalog-filters catalog-page__filters">
-            filters
+            <div class="catalog-filters__header catalog-filters__header--first">
+              стоимость:
+            </div>
+            <div class="catalog-filters__prices">
+              <div class="catalog-filters__price-range">
+                <input type="range" />
+              </div>
+              <span>от</span><input type="text" class="catalog-filters__price-start" value="0" />
+              <span>до</span><input type="text" class="catalog-filters__price-end" value="15000" />
+            </div>
+            <div class="catalog-filters__header">
+              сетка:
+            </div>
+            <div class="catalog-filters__grid-types">
+              <label class="radio catalog-filters__grid-type">
+                <input type="radio" name="grid-type" class="radio__radio">
+                <span class="radio__text">Адаптивная</span>
+              </label>
+              <label class="radio catalog-filters__grid-type">
+                <input type="radio" name="grid-type" class="radio__radio">
+                <span class="radio__text">Фиксированная</span>
+              </label>
+              <label class="radio catalog-filters__grid-type">
+                <input type="radio" name="grid-type" class="radio__radio">
+                <span class="radio__text">Резиновая</span>
+              </label>
+              <label class="radio catalog-filters__grid-type">
+                <input type="radio" name="grid-type" class="radio__radio" disabled="true">
+                <span class="radio__text">Мобильная версия</span>
+              </label>
+            </div><!-- /.catalog-filters__grid-types -->
+            
+            <div class="catalog-filters__header">
+              особенности:
+            </div>
+            <div class="catalog-filters__features">
+              <label class="checkbox catalog-filters__feature">
+                <input type="checkbox" class="checkbox__checkbox">
+                <span class="checkbox__text">Слайдер</span>
+              </label>
+              <label class="checkbox catalog-filters__feature">
+                <input type="checkbox" class="checkbox__checkbox">
+                <span class="checkbox__text">Блок преимуществ</span>
+              </label>
+              <label class="checkbox catalog-filters__feature">
+                <input type="checkbox" class="checkbox__checkbox" checked="true" disabled="true">
+                <span class="checkbox__text">Новости</span>
+              </label>
+              <label class="checkbox catalog-filters__feature">
+                <input type="checkbox" class="checkbox__checkbox" disabled="true">
+                <span class="checkbox__text">Галерея</span>
+              </label>
+              <label class="checkbox catalog-filters__feature">
+                <input type="checkbox" class="checkbox__checkbox">
+                <span class="checkbox__text">Корзина</span>
+              </label>               
+            </div><!-- /.catalog-filters__features -->
             <button class="button catalog-filters__button">показать</button>
           </aside><!-- /.catalog-filters -->
           <section class="catalog-content">
             <div class="catalog-content__sort">
               <div class="catalog-content__header">сортировать:</div>
               <div class="catalog-content__sorters">
-                <div class="catalog-content__sorter">по цене</div>
+                <div class="catalog-content__sorter catalog-content__sorter--active">по цене</div>
                 <div class="catalog-content__sorter">по типу</div>
                 <div class="catalog-content__sorter">по названию</div>
               </div>
               <div class="catalog-content__directions">
-                <span class="catalog-content__direction catalog-content__direction--desc">
-                  V
+                <span class="catalog-content__direction catalog-content__direction--desc catalog-content__direction--active">
+                  <svg width="11" height="10">
+                    <polygon points="0,0 11,0 5,10" fill="231f20" />
+                  </svg>
                 </span>
                 <span class="catalog-content__direction catalog-content__direction--asc">
-                  A
+                  <svg width="11" height="10">
+                    <polygon points="0,10 11,10 5,0" fill="231f20" />
+                  </svg>
                 </span>
               </div>
             </div><!-- /.catalog-content__sort -->
