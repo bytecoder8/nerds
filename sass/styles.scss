@@ -133,7 +133,8 @@ body {
         &::before {
             content: '';
             display: block;
-            background: url('/images/cart.png') no-repeat left center;
+            background: url('/images/cart-icon.svg') no-repeat left center;
+            opacity: 0.3;
             width: 15px;
             height: 15px;
             position: absolute;
@@ -259,13 +260,13 @@ body {
         }
 
         &--vk {
-            background: #e1e1e1 url('/images/icon_vk.png') no-repeat center center;
+            background: #e1e1e1 url('/images/vk-icon.svg') no-repeat center center;
         }
         &--fb {
-            background: #e1e1e1 url('/images/icon_fb.png') no-repeat center center;
+            background: #e1e1e1 url('/images/fb-icon.svg') no-repeat center center;
         }
         &--insta {
-            background: #e1e1e1 url('/images/icon_insta.png') no-repeat center center;
+            background: #e1e1e1 url('/images/insta-icon.svg') no-repeat center center;
         }
     }
 }
