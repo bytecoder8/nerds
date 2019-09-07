@@ -37,7 +37,7 @@ body {
     padding: 48px 0 0;
 
     &__top {
-        width: $site-width;
+        max-width: $site-width;
         margin: 0 auto;
         display: flex;
         align-items: center;
