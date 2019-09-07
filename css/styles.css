@@ -447,6 +447,40 @@ body {
     border-color: #ef8184;
     color: #ef8184; }
 
+.filter-range {
+  position: relative; }
+  .filter-range__line {
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    height: 2px;
+    background-color: #4fd69d; }
+    .filter-range__line-left {
+      position: absolute;
+      height: 2px;
+      width: 15%;
+      background-color: #dfe2e3;
+      z-index: 1; }
+    .filter-range__line-right {
+      right: 0;
+      position: absolute;
+      height: 2px;
+      width: 30%;
+      background-color: #dfe2e3;
+      z-index: 1; }
+  .filter-range__button-start {
+    position: absolute;
+    left: 15%;
+    top: -11px;
+    z-index: 2;
+    cursor: pointer; }
+  .filter-range__button-end {
+    position: absolute;
+    right: 30%;
+    top: -11px;
+    z-index: 2;
+    cursor: pointer; }
+
 /* end common */
 /* header */
 .header {

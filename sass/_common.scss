@@ -194,3 +194,47 @@
     color: #ef8184;
   }
 }
+
+.filter-range {
+  position: relative;
+
+  &__line {
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    height: 2px;
+
+    background-color: #4fd69d;
+
+    &-left {
+      position: absolute;
+      height: 2px;
+      width: 15%;
+      background-color: #dfe2e3;
+      z-index: 1;
+    }
+    &-right {
+      right: 0;
+      position: absolute;
+      height: 2px;
+      width: 30%;
+      background-color: #dfe2e3;
+      z-index: 1;
+    }
+  }
+
+  &__button-start {
+    position: absolute;
+    left: 15%;
+    top: -11px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  &__button-end {
+    position: absolute;
+    right: 30%;
+    top: -11px;
+    z-index: 2;
+    cursor: pointer;
+  }
+}
