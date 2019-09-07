@@ -190,8 +190,8 @@
         <footer class="footer">
             <section class="map-container">
                 <div class="map">
-                    КАРТА
                 </div>
+                <img class="map-container__marker" src="/images/map_marker.png" alt="marker" />
                 <div class="contacts-card map-container__contacts">
                     <div class="contacts-card__title">nёrds design studio</div>
                     <address class="contacts-card__address">
@@ -203,6 +203,23 @@
                         Напишите нам
                     </a>
                 </div><!-- /.contacts-card -->
+                <div class="contact-form contact-form--hidden">
+                    <div class="contact-form__header">Напишите нам</div>
+                    <img class="contact-form__close" src="/images/close-cross.svg" />
+                    <div>
+                        <div class="contact-form__caption">Ваше имя:</div>
+                        <input type="text" class="text-input contact-form__input" placeholder="Имя Фамилия:">
+                    </div>
+                    <div>
+                        <div class="contact-form__caption">Ваш email:</div>
+                        <input type="text" class="text-input contact-form__input" placeholder="Ваш e-mail:">
+                    </div>
+                    <div>
+                        <div class="contact-form__caption">Текст письма:</div>
+                        <textarea class="textarea-input contact-form__textarea" placeholder="В свободной форме"></textarea>
+                    </div>
+                    <button class="button contact-form__submit">Отправить</button>
+                </div><!-- /.contacts-form -->
             </section><!-- /.map-container -->
             <section class="footer__socials">
                 <ul class="socials">
@@ -216,6 +233,7 @@
                 </div>
             </section><!-- /.footer__socials -->
         </footer>      
-    </div>
+    </div><!-- /.container -->
+    <script src="/js/index.js"></script>
 </body>
 </html>
