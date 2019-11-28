@@ -110,7 +110,7 @@
             margin-right: 10px;
 
             background-color: $color-white;
-            background: url('/images/checkbox-off.svg') no-repeat;
+            background: url('../images/checkbox-off.svg') no-repeat;
             opacity: 0.4;
         }
     }
@@ -120,7 +120,7 @@
     }
 
     &__checkbox:checked + &__text::before {
-      background: url('/images/checkbox-on.svg') no-repeat;
+      background: url('../images/checkbox-on.svg') no-repeat;
     }
 
     &:hover &__text::before
